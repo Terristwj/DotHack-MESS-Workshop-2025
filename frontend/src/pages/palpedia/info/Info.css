@@ -1,0 +1,84 @@
+#pal-info {
+    flex: 10;
+}
+
+#info-card {
+    /* Align center */
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#info-card-wrapper {
+    padding: 25px;
+    margin: 10px;
+    border: 2px solid white;
+
+    font-family: cursive;
+    font-size: 24px;
+
+    animation: rotate 10s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        clip-path: polygon(
+            0 0,
+            5% 15%,
+            10% 0,
+            100% 0,
+            100% 100%,
+            100% 100%,
+            95% 85%,
+            90% 100%,
+            0 100%,
+            0 0
+        );
+    }
+
+    25% {
+        clip-path: polygon(
+            90% 0,
+            95% 15%,
+            100% 0,
+            100% 0,
+            100% 100%,
+            25% 100%,
+            10% 85%,
+            5% 100%,
+            0 100%,
+            0 0
+        );
+    }
+
+    55% {
+        clip-path: polygon(
+            90% 0,
+            95% 15%,
+            100% 0,
+            100% 0,
+            100% 100%,
+            25% 100%,
+            10% 85%,
+            5% 100%,
+            0 100%,
+            0 0
+        );
+    }
+    100% {
+        clip-path: polygon(
+            0 0,
+            5% 15%,
+            10% 0,
+            100% 0,
+            100% 100%,
+            100% 100%,
+            95% 85%,
+            90% 100%,
+            0 100%,
+            0 0
+        );
+    }
+}

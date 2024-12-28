@@ -1,0 +1,202 @@
+{
+    "pals": [
+        {
+            "id": "001",
+            "urlImage": {
+                "thumbnail": "https://static.wikia.nocookie.net/palworld/images/0/01/Lamball_menu.png",
+                "full": "https://static.wikia.nocookie.net/palworld/images/4/47/Lamball.png"
+            },
+            "name": {
+                "name": "Lamball",
+                "nickname": "Big Floof"
+            },
+            "elements": ["Neutral"],
+            "partnerSkill": {
+                "name": "Fluffy Shield",
+                "description": "When activated, equips to the player and becomes a shield. Sometimes drops Wool when assigned to Ranch."
+            },
+            "drops": ["Wool", "Lamball Meat"],
+            "description": {
+                "entry": "A walk up a hill tends to end with this Pal tumbling back down. This causes it to become dizzy and unable to move, making it easy to capture and kill. As a result, this Pal has tumbled down to the very bottom of the food chain itself.",
+                "appearance": "Lamball, as their name suggests, is a spherical pal resembling a lamb. They are bipedal and have short stubby arms and legs and shiny golden eyes. The body and long ears of Lamball are a greyish brown with white wool enveloping their body. On the top of a Lamball's head features two small orange horns. They have two gold gems on their chest similar to buttons which, combined with their wool, give off the appearance of a parka.",
+                "behavior": "Lamballs are curious of the Player when they approach it. If attacked, they will attack back with its signature Roly Poly Active Skill."
+            }
+        },
+        {
+            "id": "002",
+            "urlImage": {
+                "thumbnail": "https://static.wikia.nocookie.net/palworld/images/5/51/Cattiva_menu.png",
+                "full": "https://static.wikia.nocookie.net/palworld/images/5/59/Cattiva.png"
+            },
+            "name": {
+                "name": "Cattiva",
+                "nickname": "The Cat's Pajamas"
+            },
+            "elements": ["Neutral"],
+            "partnerSkill": {
+                "name": "Cat Helper",
+                "description": "While in team, Cattiva helps carry supplies, increasing the player's max carrying capacity."
+            },
+            "drops": ["Red Berries"],
+            "description": {
+                "entry": "At a glance it appears full of confidence, but it is in fact weak and cowardly. Being toyed with by a Cattiva is in many ways the greatest of disgraces.",
+                "appearance": "Cattiva is a pal that resembles a small bipedal pink cat. It has four thick whiskers on its face with two on each side. Cattiva's forehead sports an exaggerated tuft of fur. Cattiva has a tail that is short and curly in appearance. The ears of Cattiva are triangular and inside of its ears are black. Cattiva has an underbelly that is cream. Cattiva often is seen in a confident expression and has bright blue eyes. When its mouth is open, two fangs can be seen inside Cattiva's mouth.",
+                "behavior": "In the wild this Pal will run away if it spots the player. While working at the player's base this Pal tends to slack off a lot, take breaks frequently, and sometimes when angry will even go to bed in the middle of the day."
+            }
+        },
+        {
+            "id": "003",
+            "urlImage": {
+                "thumbnail": "https://static.wikia.nocookie.net/palworld/images/f/f4/Chikipi_menu.png",
+                "full": "https://static.wikia.nocookie.net/palworld/images/e/e9/Chikipi.png"
+            },
+            "name": {
+                "name": "Chikipi",
+                "nickname": "Plump & Juicy"
+            },
+            "elements": ["Neutral"],
+            "partnerSkill": {
+                "name": "Egg Layer",
+                "description": "Sometimes lays an Egg when assigned to Ranch."
+            },
+            "drops": ["Egg", "Chikipi Poultry"],
+            "description": {
+                "entry": "Extremely weak and far too delicious. It is one of the weakest Pals alongside Lamball. No matter how many are hunted, they just keep appearing.",
+                "appearance": "Chikipi is a pal resembling a white chicken. Its body is vaguely egg-shaped and it has grey oval eyes. The beak of Chikipi is yellow and features a red wattle. The feet of Chikipi are orange with two clawed toes in the front and one toe at the back of the foot. The top of a Chikipi's head has a large comb that is red just like its waddle.",
+                "behavior": "Wild Chikipi may sporadically lay eggs on the ground, which can be picked up by the player. This Pal retaliates only when attacked, though neighboring Chikipi will become aggressive upon witnessing another Chikipi being harmed by the player."
+            }
+        },
+        {
+            "id": "004",
+            "urlImage": {
+                "thumbnail": "https://static.wikia.nocookie.net/palworld/images/d/dc/Lifmunk_menu.png",
+                "full": "https://static.wikia.nocookie.net/palworld/images/c/c4/Lifmunk.png"
+            },
+            "name": {
+                "name": "Lifmunk",
+                "nickname": "Coward of the Steppe"
+            },
+            "elements": ["Grass"],
+            "partnerSkill": {
+                "name": "Lifmunk Recoil",
+                "description": "When activated, leaps into the player's head and uses a submachine gun to follows up player attacks."
+            },
+            "drops": ["Berry Seeds", "Low Grade Medical Supplies"],
+            "description": {
+                "entry": "Intelligent as a five to seven-year-old human child. It makes a wonderful partner, but there have been more than a few cases where they've killed their master after learning to use weapons.",
+                "appearance": "Lifmunk is a pal taking on the appearance of rodents such as squirrels and chipmunks. Their body primarily consists of a light greenish yellow color. The tail of Lifmunk is large and bushy and is tipped with white. Their ears, whiskers and collar all take on the appearance of green leaves with the right ear having a distinct notch giving the appearance of a bitten leaf. Their shiny eyes are a bright red-orange, and they have a large gem on their forehead to match. Underneath their collar, there can be seen two red berries attached to their chest, possibly resembling cherries.",
+                "behavior": "Wild Lifmunk will often run away from the player upon sight. When attacked, it keeps running away."
+            }
+        },
+        {
+            "id": "005",
+            "urlImage": {
+                "thumbnail": "https://static.wikia.nocookie.net/palworld/images/d/d7/Foxparks_menu.png",
+                "full": "https://static.wikia.nocookie.net/palworld/images/d/dd/Foxparks.png"
+            },
+            "name": {
+                "name": "Foxparks",
+                "nickname": "Revealer of Paths"
+            },
+            "elements": ["Fire"],
+            "partnerSkill": {
+                "name": "Huggy Fire",
+                "description": "When activated, equips to the player and transforms into a flamethrower."
+            },
+            "drops": ["Leather", "Flame Organ"],
+            "description": {
+                "entry": "It is unskilled at controlling fire from the moment it is born and tends to choke on the flames it breathes unintentionally. Foxparks sneezes are one of the leading causes of forest fires.",
+                "appearance": "Foxparks is a firey fox pal that is a bright red-orange bearing resemblance to a red fox. Its ears are long with the insides being tan and the ends of the ears are tipped in black. It has eyebrows that are a lighter shade of yellow. On each side of Foxsparks' face, messy tufts of fur are visible. The stomach of Foxsparks like the inside of its ears are tan. It has a large bushy tail that like its ears, is tipped with a black pattern. A prominent feature on Foxsparks is being engulfed with flames that cover over its legs and the tip of its tail. The eyes of Foxparks come a crimson red color.",
+                "behavior": "This Pal is a fairly timid creature that will usually flee away upon sighting a player. It is usually found travelling alone or in pairs."
+            }
+        },
+        {
+            "id": "006",
+            "urlImage": {
+                "thumbnail": "https://static.wikia.nocookie.net/palworld/images/5/5e/Fuack_menu.png",
+                "full": "https://static.wikia.nocookie.net/palworld/images/6/6c/Fuack.png"
+            },
+            "name": {
+                "name": "Fuack",
+                "nickname": "Rowdy Wave Ripper"
+            },
+            "elements": ["Water"],
+            "partnerSkill": {
+                "name": "Surfing Slam",
+                "description": "When activated, Fuack body surfs towards an enemy and slams into them."
+            },
+            "drops": ["Leather", "Pal Fluids"],
+            "description": {
+                "entry": "Using its own body water, this Pal can create waves anywhere. It body surfs when in a hurry, but the resulting speed often ends in a fatal collision.",
+                "appearance": "Fuack appears like a blue, bipedal platypus with a yellow duck bill and two strange tufts sticking out on its head resembling pigtails. It has a white frill around its neck, split up into several bead-like segments. It also has a beaver or platypus tail, which is a slightly different shade of blue than the rest of its body.",
+                "behavior": "This Pal can be found roaming around bodies of water and inland, it may run away from the player. Like most Pals, wild Fuack will retaliate when attacked."
+            }
+        },
+        {
+            "id": "007",
+            "urlImage": {
+                "thumbnail": "https://static.wikia.nocookie.net/palworld/images/c/ce/Sparkit_menu.png",
+                "full": "https://static.wikia.nocookie.net/palworld/images/e/ee/Sparkit.png"
+            },
+            "name": {
+                "name": "Sparkit",
+                "nickname": "Livewire Tabby"
+            },
+            "elements": ["Electric"],
+            "partnerSkill": {
+                "name": "Static Electricity",
+                "description": "While in team, increases attack power of Electric Pals."
+            },
+            "drops": ["Electric Organ"],
+            "description": {
+                "entry": "During the dry season, this Pal is always on the verge of blowing a fuse, Sparks can fly with even the slightest provocation even amongst allies.",
+                "appearance": "Sparkit is a bipedal cat-like pal resembling a tiger or a tabby. Its body is covered with light yellow fur with a white muzzle. Its face features two thick whiskers shaped like lightning bolts. Sparkit's ears are pointed and feature two black stripes on each ear. Its forehead features a black lightning bolt marking. Sparkit has a thin white wire-like tail that ends in an exaggerated yellow lightning bolt shape. Its paws are black and give the impression of mittens or gloves. It has a constant scowling expression featuring brown colored eyes. Sparkit has a puffy white collar around its neck.",
+                "behavior": "Wild Sparkit are generally pacific and may run away from the player when approached."
+            }
+        },
+        {
+            "id": "008",
+            "urlImage": {
+                "thumbnail": "https://static.wikia.nocookie.net/palworld/images/4/40/Tanzee_menu.png",
+                "full": "https://static.wikia.nocookie.net/palworld/images/3/34/Tanzee.png"
+            },
+            "name": {
+                "name": "Tanzee",
+                "nickname": "Dexterous Primate"
+            },
+            "elements": ["Grass"],
+            "partnerSkill": {
+                "name": "Cheery Rifle",
+                "description": "When activated, Tanzee will mercilessly fire an assault rifle at nearby enemies."
+            },
+            "drops": ["Mushroom"],
+            "description": {
+                "entry": "Long ago, this Pal used long objects like tree branches as weapons. After coming into contact with humans, however, it found something much more effective: guns.",
+                "appearance": "Tanzee is a small, monkey-like being with a bright green body and cream-colored accents on its face, belly, and feet. Its large, round eyes sparkle with a cheerful expression, and it has a wide, happy smile that adds to its adorable charm. The creature’s head is adorned with a unique tuft of leaf-like shapes, giving it a plant-inspired appearance. Its ears are large and round, with vibrant yellow interiors that contrast with its green body. A long, thin tail extends from its back, ending in a leaf-shaped tip, further enhancing its nature-themed design. Its short limbs, with small arms and feet, make the creature look compact and playful, embodying a mix of natural and animal-like characteristics that make it both cute and whimsical.",
+                "behavior": "Usually flees if the player is within the vicinity and will attack violently if struck."
+            }
+        },
+        {
+            "id": "009",
+            "urlImage": {
+                "thumbnail": "https://static.wikia.nocookie.net/palworld/images/2/21/Rooby_menu.png",
+                "full": "https://static.wikia.nocookie.net/palworld/images/e/e5/Rooby.png"
+            },
+            "name": {
+                "name": "Rooby",
+                "nickname": "Chief of the Herd"
+            },
+            "elements": ["Fire"],
+            "partnerSkill": {
+                "name": "Tiny Spark",
+                "description": "While in team, increases attack power of Fire Pals."
+            },
+            "drops": ["Flame Organ", " Leather"],
+            "description": {
+                "entry": "Wild Rooby surprisingly never get sick. Eating one piece of charcoal a day, made by burning a branch, is the secret to its eternal health.",
+                "appearance": "Rooby resembles a small red deer with a plume of fire on its forehead that burns brightly. Its body is covered in sleek, cream-colored fur on the legs, underbelly, and face, while the rest of its body is a vibrant red. The fur around the front of its neck is shaped like a bowtie, giving it a distinct and elegant appearance. Rooby's ears are large and pointed, standing upright, and its bright blue eyes are sharp and expressive. Its most prominent feature is its very large, bushy tail, which is about the length of its body and has a smooth, rounded shape, adding to its striking silhouette. Its legs are slender but sturdy, with red markings just above its hooves, complementing its fiery theme.",
+                "behavior": "Wild Rooby will be passive towards the player and may flee. Like most other Pals, it will become aggressive when attacked."
+            }
+        }
+    ]
+}

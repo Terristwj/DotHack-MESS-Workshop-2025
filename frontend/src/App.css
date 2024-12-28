@@ -1,0 +1,33 @@
+.background {
+    background-image: url("https://i.redd.it/8sm9otzcsqgd1.jpeg");
+    background-size: cover;
+    height: 100vh;
+
+    /* Opacity */
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+
+    /* Viewing animation */
+    transition-duration: 2s;
+    filter: blur(3px);
+}
+
+.background-view {
+    background-color: rgba(255, 255, 255, 0);
+    filter: blur(0px);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+
+    /* Hiding animation */
+    transition-duration: 0.5s;
+}
