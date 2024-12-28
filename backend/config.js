@@ -9,5 +9,3 @@ export const databaseConfig = {
     host: process.env.DB_HOST,
     port: process.env.DB_PORT,
 };
-
-console.log(databaseConfig);
