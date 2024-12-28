@@ -2,8 +2,8 @@
 
 ## About
 
-Want to develop your own application but don't know how to start? 🤔
-🚀 Kickstart your software development journey with .Hack's full-stack program: **MESS**
+Want to develop your own application but don't know how to start?
+Kickstart your software development journey with .Hack's full-stack program: **MESS**
 
 ## Technology
 
@@ -17,13 +17,16 @@ Want to develop your own application but don't know how to start? 🤔
 ## Workshop Dates:
 
 The details of the 2-day workshop are as follows:
-1️⃣ Day 1: Frontend workshop
-🗓 Date: 8 Jan 2025
-⏰ Time: 2.30pm-5.30pm
 
-2️⃣ Day 2: Backend workshop
-🗓 Date: 9 Jan 2025
-⏰ Time: 2.30pm-6.30pm
+Day 1: Frontend workshop
+
+-   Date: 8 Jan 2025
+-   Time: 2.30pm-5.30pm
+
+Day 2: Backend workshop
+
+-   Date: 9 Jan 2025
+-   Time: 2.30pm-6.30pm
 
 ## Pre-requisites
 
