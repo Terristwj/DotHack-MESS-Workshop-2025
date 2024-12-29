@@ -1,0 +1,44 @@
+.description-box-outer {
+    position: relative;
+    margin: 20px 20px;
+    padding: 15px;
+    transition-duration: 0.5s;
+}
+
+.description-box-outer:hover {
+    color: rgb(166, 255, 255);
+}
+.description-box-outer:before,
+.description-box-outer:after,
+.description-box-inner:before,
+.description-box-inner:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 10px;
+}
+
+.description-box-outer:after {
+    top: 0;
+    right: 0;
+    border-right: 3px solid rgb(166, 255, 255);
+    border-top: 3px solid rgb(166, 255, 255);
+}
+.description-box-outer:before {
+    top: 0;
+    left: 0;
+    border-left: 3px solid rgb(166, 255, 255);
+    border-top: 3px solid rgb(166, 255, 255);
+}
+.description-box-inner:before {
+    bottom: 0;
+    left: 0;
+    border-left: 3px solid rgb(166, 255, 255);
+    border-bottom: 3px solid rgb(166, 255, 255);
+}
+.description-box-inner:after {
+    bottom: 0;
+    right: 0;
+    border-right: 3px solid rgb(166, 255, 255);
+    border-bottom: 3px solid rgb(166, 255, 255);
+}

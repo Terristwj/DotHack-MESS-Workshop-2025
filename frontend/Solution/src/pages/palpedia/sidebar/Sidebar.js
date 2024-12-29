@@ -2,12 +2,14 @@ import "./Sidebar.css";
 import PalCard from "./PalCard";
 
 function Sidebar({ pals, activePal, setActivePal, backgroundView }) {
+    // Used in the last card
     function redirectToWiki() {
         window.open("https://palworld.fandom.com/wiki/Palpedia", "_blank");
     }
 
     return (
         <div id="sidebar">
+            {/* Scrolling Cards of Pals */}
             <div id="pal-list">
                 {pals.map((pal, i) => {
                     pal.uid = `${pal.id}x${pal.name.name}`;
@@ -24,6 +26,8 @@ function Sidebar({ pals, activePal, setActivePal, backgroundView }) {
                     );
                 })}
             </div>
+
+            {/* Last Card */}
             <div
                 className="last-card"
                 style={backgroundView ? { cursor: "none" } : {}}

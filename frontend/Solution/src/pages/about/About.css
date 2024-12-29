@@ -1,0 +1,31 @@
+#about {
+    margin-top: 15px;
+    height: 85vh;
+
+    color: white;
+    background: rgba(25, 35, 40, 0.8);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+}
+
+#about-wrapper {
+    padding: 25px 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#hackCCA {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+#hackCCA-text {
+    font-weight: bold;
+}
+
+#hackCCA-text,
+.keywords {
+    color: #86ffcf;
+}

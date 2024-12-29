@@ -1,0 +1,11 @@
+.about-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about-box-paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

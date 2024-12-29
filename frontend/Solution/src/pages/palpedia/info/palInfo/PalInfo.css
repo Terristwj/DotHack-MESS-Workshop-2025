@@ -1,0 +1,57 @@
+#pal-info {
+    display: flex;
+    flex-direction: column;
+
+    /* scroll */
+    overflow-y: auto;
+}
+
+#pal-info::-webkit-scrollbar {
+    width: 5px;
+}
+
+#pal-info::-webkit-scrollbar-track {
+    background: rgba(59, 67, 70, 0.9);
+}
+
+#pal-info::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 1px;
+}
+
+#pal-info::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#pal-info-header {
+    display: flex;
+    justify-content: center;
+}
+
+#pal-info-body {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #pal-info-body {
+        flex-direction: row;
+    }
+}
+
+.pal-info-aside-left,
+.pal-info-aside-right {
+    flex: 6;
+}
+
+.pal-info-aside-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pal-image-full {
+    max-height: 50vh;
+    margin: 100px 0px 40px 0px;
+}

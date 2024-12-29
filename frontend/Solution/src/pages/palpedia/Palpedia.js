@@ -1,21 +1,30 @@
 import "./Palpedia.css";
 import { useState, useEffect } from "react";
+
+// Components
 import Sidebar from "./sidebar/Sidebar";
 import Info from "./info/Info";
 
-function Palpedia({ backgroundView }) {
-    const [activePal, setActivePal] = useState(null);
-    const [palsData, setPalsData] = useState([]);
+// API connections
+import { fetchPals, fetchElements } from "../../api";
 
-    function fetchPals() {
-        return fetch("pals.json").then(async (response) => {
-            return await response.json();
-        });
-    }
+function Palpedia({ backgroundView }) {
+    // (1) Used at Sidebar Component
+    const [activePal, setActivePal] = useState(null);
+
+    // (2) Used at Info Component
+    const [palsData, setPalsData] = useState([]);
+    const [elementsData, setElementsData] = useState([]);
+
+    // Fetch data from API
+    // - Note: The 'API' will be locally inside this FE project
+    // - Day-2 will be about creating your own APIs in the BE project
     useEffect(() => {
-        document.title = "Palpedia";
         fetchPals().then((data) => {
             setPalsData(data.pals);
+        });
+        fetchElements().then((data) => {
+            setElementsData(data);
         });
     }, []);
 
@@ -27,7 +36,7 @@ function Palpedia({ backgroundView }) {
                 setActivePal={setActivePal}
                 backgroundView={backgroundView}
             />
-            <Info pal={activePal} />
+            <Info pal={activePal} elements={elementsData} />
         </div>
     );
 }
