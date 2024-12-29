@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/mess-workshop/static/css/main.776b8f0f.css",
-    "main.js": "/mess-workshop/static/js/main.a3fc3c39.js",
-    "index.html": "/mess-workshop/index.html",
-    "main.776b8f0f.css.map": "/mess-workshop/static/css/main.776b8f0f.css.map",
-    "main.a3fc3c39.js.map": "/mess-workshop/static/js/main.a3fc3c39.js.map"
+    "main.css": "/DotHack-MESS-Workshop-2025/static/css/main.776b8f0f.css",
+    "main.js": "/DotHack-MESS-Workshop-2025/static/js/main.a3fc3c39.js",
+    "index.html": "/DotHack-MESS-Workshop-2025/index.html",
+    "main.776b8f0f.css.map": "/DotHack-MESS-Workshop-2025/static/css/main.776b8f0f.css.map",
+    "main.a3fc3c39.js.map": "/DotHack-MESS-Workshop-2025/static/js/main.a3fc3c39.js.map"
   },
   "entrypoints": [
     "static/css/main.776b8f0f.css",
