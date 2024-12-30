@@ -1,6 +1,6 @@
 import { Router } from "express";
 import trycatch from "../utils/tryCatch.js";
-import * as dropsController from "../controller/drops.controller.js"
+import * as dropsController from "../controller/drops.controller.js";
 
 export const router = Router();
 
