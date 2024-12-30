@@ -8,6 +8,7 @@ const router = express.Router({ mergeParams: true });
 import { router as elementRoute } from "./routes/element.route.js";
 import { router as dropsRoute } from "./routes/drops.route.js";
 import { router as palroute } from "./routes/pal.route.js";
+import { router as palDropRoute } from "./routes/pal_drop.route.js";
 
 //middleware
 app.use(cors());
