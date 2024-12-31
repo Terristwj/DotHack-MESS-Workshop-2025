@@ -8,6 +8,7 @@ export const getDrops = async (req, res) => {
 export const getDropsbyID = async (req, res) => {
     let drop_id = req.params.id;
     let results = await dropsModel.getDropsbyID(drop_id);
+    if (results.length == 0) throw "Not Found";
     return res.status(200).json(results);
 };
 

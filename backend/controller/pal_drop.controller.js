@@ -8,12 +8,14 @@ export const getPalDrops = async (req, res) => {
 export const getPalDropByID = async (req, res) => {
     let pal_drop_id = req.params.id;
     let results = await palDropModel.getPalDropByID(pal_drop_id);
+    if (results.length == 0) throw "Not Found";
     return res.status(200).json(results);
 };
 
 export const getPalDropsbyPalID = async (req, res) => {
     let pal_id = req.params.id;
     let results = await palDropModel.getPalDropsbyPalID(pal_id);
+    if (results.length == 0) throw "Not Found";
     return res.status(200).json(results);
 };
 

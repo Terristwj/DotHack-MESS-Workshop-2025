@@ -8,6 +8,7 @@ export const getPals = async (req, res) => {
 export const getPalByID = async (req, res) => {
     let pal_id = req.params.id;
     let results = await palModel.getPalByID(pal_id);
+    if (results.length == 0) throw "Not Found";
     return res.status(200).json(results);
 };
 
