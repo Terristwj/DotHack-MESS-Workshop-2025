@@ -1,7 +1,7 @@
 import * as palDropModel from "../model/pal_drop.model.js";
 
 export const getPalDrops = async (req, res) => {
-    let results = palDropModel.getPalDrops();
+    let results = await palDropModel.getPalDrops();
     return res.status(200).json(results);
 };
 
@@ -19,6 +19,8 @@ export const getPalDropsbyPalID = async (req, res) => {
 
 export const createPalDrop = async (req, res) => {
     let data = req.body;
+    let results = await palDropModel.createPalsDrop(data);
+    return res.status(200).json(results);
 };
 
 export const deletePalDrop = async (req, res) => {

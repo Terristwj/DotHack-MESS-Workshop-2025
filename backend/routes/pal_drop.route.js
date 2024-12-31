@@ -11,4 +11,6 @@ router.get(
     trycatch(palDropController.getPalDropsbyPalID)
 );
 
+router.post("/createPalDrops", trycatch(palDropController.createPalDrop));
+
 router.delete("/deletePalDrop/:id", trycatch(palDropController.deletePalDrop));

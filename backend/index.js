@@ -18,6 +18,7 @@ app.use(router);
 app.use("/element", elementRoute);
 app.use("/drops", dropsRoute);
 app.use("/pal", palroute);
+app.use("/pal-drop", palDropRoute);
 // app.get("/test", async (req, res, next) => {
 //     try {
 //         const result = await pool.query('SELECT * FROM public."Drops" ORDER BY drop_id ASC;');
