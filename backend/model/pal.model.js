@@ -17,7 +17,7 @@ export const getPals = async () => {
         E.element_name,
         E.element_img
     FROM public."Pals" AS P
-    INNER JOIN public."Element" AS E ON P.element_id = E.element_id
+    INNER JOIN public."Element" AS E ON P.element_id = E.element_id;
     `;
     let pals = await pool.query(sql);
     return pals.rows;
@@ -45,7 +45,7 @@ export const getPalByID = async (pal_id) => {
     INNER JOIN public."Pal_Drops" AS PD ON P.pal_id = PD.pal_id
     INNER JOIN public."Element" AS E ON P.element_id = E.element_id
     INNER JOIN public."Drops" AS D ON PD.drop_id = D.drop_id
-    WHERE P.pal_id = $1
+    WHERE P.pal_id = $1;
     `;
     let values = [pal_id];
     let pal = await pool.query(sql, values);
