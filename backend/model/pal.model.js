@@ -1,13 +1,52 @@
 import pool from "../db.js";
 
 export const getPals = async () => {
-    let sql = 'SELECT * FROM public."Pals";';
+    let sql = `
+    SELECT
+        P.pal_id,
+        P.pal_name,
+        P.pal_nickname,
+        P.element_id,
+        P.entry_desc,
+        P.appearance_desc,
+        P.behaviour_desc,
+        P.pal_skill_name,
+        P.pal_skill_desc,
+        P.pal_menu_img,
+        P.pal_big_img,
+        E.element_name,
+        E.element_img
+    FROM public."Pals" AS P
+    INNER JOIN public."Element" AS E ON P.element_id = E.element_id
+    `;
     let pals = await pool.query(sql);
     return pals.rows;
 };
 
 export const getPalByID = async (pal_id) => {
-    let sql = 'SELECT * FROM public."Pals" WHERE pal_id = $1';
+    let sql = `
+    SELECT
+        P.pal_id,
+        P.pal_name,
+        P.pal_nickname,
+        P.element_id,
+        P.entry_desc,
+        P.appearance_desc,
+        P.behaviour_desc,
+        P.pal_skill_name,
+        P.pal_skill_desc,
+        P.pal_menu_img,
+        P.pal_big_img,
+        E.element_name,
+        E.element_img,
+        D.drop_id,
+        D.drop_name
+    FROM public."Pals" AS P
+    INNER JOIN public."Pal_Drops" AS PD ON P.pal_id = PD.pal_id
+    INNER JOIN public."Element" AS E ON P.element_id = E.element_id
+    INNER JOIN public."Drops" AS D ON PD.drop_id = D.drop_id
+    WHERE P.pal_id = $1
+    `;
     let values = [pal_id];
     let pal = await pool.query(sql, values);
     return pal.rows;
@@ -36,7 +75,8 @@ export const createPal = async (data) => {
 export const updatePal = async (pal_id, data) => {
     let values = Object.values(data);
     values.push(pal_id);
-    let sql = `UPDATE public."Pals" SET 
+    let sql = `
+    UPDATE public."Pals" SET 
         pal_name = $1, 
         pal_nickname = $2, 
         element_id = $3,
@@ -47,7 +87,7 @@ export const updatePal = async (pal_id, data) => {
         pal_skill_desc = $8,
         pal_menu_img = $9,
         pal_big_img = $10
-    WHERE pal_id = $11 AND 1 = 1;
+    WHERE pal_id = $11;
     `;
     let results = await pool.query(sql, values);
     return results;
