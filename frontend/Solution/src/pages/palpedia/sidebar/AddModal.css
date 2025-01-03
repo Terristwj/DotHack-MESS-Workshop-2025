@@ -1,0 +1,169 @@
+.adding-card {
+    border: 3px solid gray;
+    color: white;
+    font-size: 13px;
+
+    cursor: pointer;
+    user-select: none;
+
+    background: linear-gradient(
+        -45deg,
+        rgba(53, 58, 64, 1) 34%,
+        rgba(74, 78, 82, 1) 34%,
+        rgba(74, 78, 82, 1) 66%,
+        rgba(53, 58, 64, 1) 67%,
+        rgba(53, 58, 64, 1) 100%
+    );
+    transition-duration: 0.2s;
+
+    text-align: center;
+    padding: 10px;
+}
+
+.adding-card:hover {
+    border: 3px solid rgba(0, 156, 255, 1);
+    background: linear-gradient(
+        -45deg,
+        rgba(0, 156, 255, 1) 34%,
+        rgba(51, 176, 255, 1) 34%,
+        rgba(51, 176, 255, 1) 66%,
+        rgba(0, 156, 255, 1) 67%,
+        rgba(0, 156, 255, 1) 100%
+    );
+}
+
+/* Modal */
+.modal {
+    color: black;
+    opacity: 0;
+
+    position: absolute;
+    z-index: -1;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 85vh;
+    width: 100%;
+    padding: 20px 0px 50px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+    transition-duration: 0.5s;
+}
+
+.modal-content {
+    width: 80%;
+    max-width: 500px;
+
+    margin: auto;
+    padding: 20px 50px;
+
+    background-color: #fefefe;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-button-container {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0px;
+}
+
+.modal-button {
+    border: 1px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.modal-button:hover {
+    background-color: #555;
+    color: white;
+}
+
+.modal-button-active {
+    background-color: #555;
+    color: white;
+}
+
+.close {
+    color: #aaaaaa;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-info > form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-info > h1 {
+    margin-bottom: 15px;
+}
+
+form > label {
+    display: flex;
+}
+
+form > label > span {
+    flex: 4;
+}
+
+form > label > input[type="text"],
+form > label > select {
+    flex: 8;
+}
+
+.all-drops-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    flex-direction: column;
+    gap: 1px;
+    overflow-y: scroll;
+
+    max-height: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .modal-content {
+        width: 90%;
+        padding: 20px 20px;
+    }
+
+    .all-drops-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+form > button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+    background-color: #f1f1f1;
+    color: black;
+    border: 1px solid black;
+}
+
+form > button:hover {
+    background-color: #555;
+    color: white;
+}
