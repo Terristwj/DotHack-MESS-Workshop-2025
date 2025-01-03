@@ -1,0 +1,45 @@
+.pal-card,
+.pal-card-active {
+    border: 3px solid gray;
+    color: white;
+
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+
+    justify-content: space-between;
+
+    background: linear-gradient(
+        -45deg,
+        rgba(53, 58, 64, 1) 34%,
+        rgba(74, 78, 82, 1) 34%,
+        rgba(74, 78, 82, 1) 66%,
+        rgba(53, 58, 64, 1) 67%,
+        rgba(53, 58, 64, 1) 100%
+    );
+
+    clip-path: polygon(0% 0%, 90% 0%, 100% 35%, 100% 100%, 0% 100%);
+    transition-duration: 0.2s;
+}
+
+.pal-card:hover,
+.pal-card-active {
+    border: 3px solid rgba(0, 156, 255, 1);
+    background: linear-gradient(
+        -45deg,
+        rgba(0, 156, 255, 1) 34%,
+        rgba(51, 176, 255, 1) 34%,
+        rgba(51, 176, 255, 1) 66%,
+        rgba(0, 156, 255, 1) 67%,
+        rgba(0, 156, 255, 1) 100%
+    );
+}
+
+.pal-card-info {
+    padding: 10px;
+}
+
+.pal-card-image {
+    height: 70px;
+    aspect-ratio: 1/1;
+}

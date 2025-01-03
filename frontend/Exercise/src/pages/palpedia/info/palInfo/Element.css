@@ -1,0 +1,61 @@
+.pal-element {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 2px 15px 2px 2px;
+
+    width: 100px;
+    height: 40px;
+
+    color: white;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    user-select: none;
+}
+
+.img-element {
+    width: 40px;
+    aspect-ratio: 1;
+    margin: 0px;
+    padding: 0px;
+}
+
+.color-neutral {
+    background: #b4938b;
+}
+
+.color-fire {
+    background: #d65531;
+}
+
+.color-water {
+    background: #1a7cda;
+}
+
+.color-grass {
+    background: #66a800;
+}
+
+.color-electric {
+    background: #cead00;
+}
+
+.color-ice {
+    background: #19b2bf;
+}
+
+.color-ground {
+    background: #8f5523;
+}
+
+.color-dark {
+    background: #9f104a;
+}
+
+.color-dragon {
+    background: #a54ac6;
+}

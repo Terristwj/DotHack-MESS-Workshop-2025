@@ -1,0 +1,49 @@
+#about {
+    margin-top: 15px;
+    height: 85vh;
+
+    color: white;
+    background: rgba(25, 35, 40, 0.8);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+    overflow-y: auto;
+}
+
+#about::-webkit-scrollbar {
+    width: 5px;
+}
+
+#about::-webkit-scrollbar-track {
+    background: rgba(59, 67, 70, 0.9);
+}
+
+#about::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 1px;
+}
+
+#about::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#about-wrapper {
+    padding: 25px 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#hackCCA {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+#hackCCA-text {
+    font-weight: bold;
+}
+
+#hackCCA-text,
+.keywords {
+    color: #86ffcf;
+}
