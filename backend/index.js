@@ -1,9 +1,11 @@
 import cors from "cors";
 import express from "express";
 import { errorHandlerMiddleware } from "./middleware/errorHandler.middleware.js";
+import pool from "./db.js";
 
 const app = express();
 const router = express.Router({ mergeParams: true });
+
 // Routes
 import { router as elementRoute } from "./routes/element.route.js";
 import { router as dropsRoute } from "./routes/drops.route.js";
@@ -19,9 +21,10 @@ app.use("/element", elementRoute);
 app.use("/drops", dropsRoute);
 app.use("/pal", palroute);
 app.use("/pal-drop", palDropRoute);
-// app.get("/test", async (req, res, next) => {
+
+// app.get("/getElement", async (req, res, next) => {
 //     try {
-//         const result = await pool.query('SELECT * FROM public."Drops" ORDER BY drop_id ASC;');
+//         const result = await pool.query('SELECT * from public."Element";');
 //         console.log(result);
 
 //         res.json(result)

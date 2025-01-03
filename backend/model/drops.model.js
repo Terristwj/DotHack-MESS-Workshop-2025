@@ -7,7 +7,7 @@ export const getDrops = async () => {
 };
 
 export const getDropsbyID = async (drop_id) => {
-    let sql = 'SELECT * FROM public."Drops" WHERE drop_id = $1';
+    let sql = 'SELECT * FROM public."Drops" WHERE drop_id = $1;';
     let values = [drop_id];
     let drop = await pool.query(sql, values);
     return drop.rows;

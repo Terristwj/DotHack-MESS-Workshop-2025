@@ -14,7 +14,7 @@ Run the following in root terminal:
 DB_USERNAME= 
 DB_PASSWORD= 
 DB_DATABASE_NAME=
-DB_HOST= "localhost"
+DB_HOST= 
 DB_PORT= 
 ```
 2. `npm i`
