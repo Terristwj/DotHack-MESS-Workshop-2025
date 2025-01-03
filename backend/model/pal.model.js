@@ -68,7 +68,7 @@ export const createPal = async (data) => {
         pal_big_img
         ) VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10);`;
 
-    let results = pool.query(sql, values);
+    let results = await pool.query(sql, values);
     return results;
 };
 
