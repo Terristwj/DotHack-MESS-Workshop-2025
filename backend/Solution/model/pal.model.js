@@ -47,8 +47,15 @@ export const getPalByID = async (pal_id) => {
     INNER JOIN public."Drops" AS D ON PD.drop_id = D.drop_id
     WHERE P.pal_id = $1;
     `;
-    let values = [pal_id];
-    let pal = await pool.query(sql, values);
+
+    // Prepared statement
+    const query = {
+        name: "fetch-pal",
+        text: sql,
+        values: [pal_id],
+    };
+
+    let pal = await pool.query(query);
     return pal.rows;
 };
 
