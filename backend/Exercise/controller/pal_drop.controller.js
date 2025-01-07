@@ -35,6 +35,7 @@ export const createPalDrop = async (req, res) => {
 export const deletePalDrop = async (req, res) => {
     let pal_drop_id = req.params.id;
     let results = await palDropModel.deletePalsDrop(pal_drop_id);
-    if (results.rowCount == 0) throw new CustomError("Not Found", 404, `ID of ${pal_id} not found`);
+    if (results.rowCount == 0)
+        throw new CustomError("Not Found", 404, `ID of ${pal_id} not found`);
     return res.status(204).json(results);
 };
