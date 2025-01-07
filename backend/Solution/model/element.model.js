@@ -8,9 +8,8 @@ export const getElement = async () => {
 
 // SQL INJECTION QUERY
 export const getElementById = async (id) => {
-    let sql = `SELECT * from public."Element" WHERE element_id = ${id};`;
     // let sql = 'SELECT * from public."Element" WHERE element_id = $1;';
     // let values = [id];
-    let elements = await pool.query(sql);
+    let elements = await pool.query(`SELECT * from public."Element" WHERE element_id = ${id};`);
     return elements.rows;
 };
